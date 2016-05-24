@@ -1,0 +1,11 @@
+D:\Workspace\GitHub\weatherWindows\Weather\bin\Release\Weather.exe.config
+D:\Workspace\GitHub\weatherWindows\Weather\bin\Release\Weather.exe
+D:\Workspace\GitHub\weatherWindows\Weather\bin\Release\Weather.pdb
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Release\Weather.main.resources
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Release\Weather.Properties.Resources.resources
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Release\Weather.settings.resources
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Release\Weather.bookmarks.resources
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Release\Weather.csproj.GenerateResource.Cache
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Release\Weather.exe
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Release\Weather.pdb
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Release\Weather.csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+D:\Workspace\GitHub\weatherWindows\Weather\bin\Debug\Weather.exe.config
+D:\Workspace\GitHub\weatherWindows\Weather\bin\Debug\Weather.exe
+D:\Workspace\GitHub\weatherWindows\Weather\bin\Debug\Weather.pdb
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.main.resources
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.Properties.Resources.resources
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.settings.resources
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.bookmarks.resources
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.csproj.GenerateResource.Cache
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.exe
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.pdb
