@@ -16,8 +16,6 @@ namespace Weather
         {
             InitializeComponent();
 
-            textBoxApiKey.Text = Properties.Settings.Default.apikey; // loads the current api-key in the textbox
-
             switch (startPoint)
             {
                 case "api":

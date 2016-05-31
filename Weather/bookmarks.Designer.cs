@@ -41,9 +41,10 @@
             // buttonAddCityID
             // 
             this.buttonAddCityID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonAddCityID.Location = new System.Drawing.Point(357, 12);
+            this.buttonAddCityID.Location = new System.Drawing.Point(257, 11);
+            this.buttonAddCityID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAddCityID.Name = "buttonAddCityID";
-            this.buttonAddCityID.Size = new System.Drawing.Size(95, 64);
+            this.buttonAddCityID.Size = new System.Drawing.Size(52, 44);
             this.buttonAddCityID.TabIndex = 3;
             this.buttonAddCityID.Text = "Add";
             this.buttonAddCityID.UseVisualStyleBackColor = true;
@@ -53,18 +54,20 @@
             // 
             this.textBoxCityID.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxCityID.Location = new System.Drawing.Point(89, 47);
+            this.textBoxCityID.Location = new System.Drawing.Point(53, 35);
+            this.textBoxCityID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxCityID.Name = "textBoxCityID";
-            this.textBoxCityID.Size = new System.Drawing.Size(262, 29);
+            this.textBoxCityID.Size = new System.Drawing.Size(200, 20);
             this.textBoxCityID.TabIndex = 2;
             this.textBoxCityID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCityID_KeyPress);
             // 
             // labelCityID
             // 
             this.labelCityID.AutoSize = true;
-            this.labelCityID.Location = new System.Drawing.Point(17, 49);
+            this.labelCityID.Location = new System.Drawing.Point(12, 39);
+            this.labelCityID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCityID.Name = "labelCityID";
-            this.labelCityID.Size = new System.Drawing.Size(66, 25);
+            this.labelCityID.Size = new System.Drawing.Size(37, 13);
             this.labelCityID.TabIndex = 2;
             this.labelCityID.Text = "cityID:";
             // 
@@ -74,10 +77,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBoxCityIDBookmarks.FormattingEnabled = true;
-            this.listBoxCityIDBookmarks.ItemHeight = 24;
-            this.listBoxCityIDBookmarks.Location = new System.Drawing.Point(12, 82);
+            this.listBoxCityIDBookmarks.Location = new System.Drawing.Point(11, 59);
+            this.listBoxCityIDBookmarks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBoxCityIDBookmarks.Name = "listBoxCityIDBookmarks";
-            this.listBoxCityIDBookmarks.Size = new System.Drawing.Size(440, 268);
+            this.listBoxCityIDBookmarks.Size = new System.Drawing.Size(298, 212);
             this.listBoxCityIDBookmarks.Sorted = true;
             this.listBoxCityIDBookmarks.TabIndex = 4;
             this.listBoxCityIDBookmarks.DoubleClick += new System.EventHandler(this.listBoxCityIDBookmarks_DoubleClick);
@@ -86,9 +89,10 @@
             // buttonDelete
             // 
             this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonDelete.Location = new System.Drawing.Point(362, 356);
+            this.buttonDelete.Location = new System.Drawing.Point(260, 275);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(90, 42);
+            this.buttonDelete.Size = new System.Drawing.Size(49, 23);
             this.buttonDelete.TabIndex = 5;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
@@ -97,9 +101,10 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(13, 14);
+            this.labelName.Location = new System.Drawing.Point(11, 15);
+            this.labelName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(70, 25);
+            this.labelName.Size = new System.Drawing.Size(38, 13);
             this.labelName.TabIndex = 8;
             this.labelName.Text = "Name:";
             // 
@@ -107,18 +112,19 @@
             // 
             this.textBoxName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxName.Location = new System.Drawing.Point(89, 12);
+            this.textBoxName.Location = new System.Drawing.Point(53, 11);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(262, 29);
+            this.textBoxName.Size = new System.Drawing.Size(200, 20);
             this.textBoxName.TabIndex = 1;
             this.textBoxName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxName_KeyPress);
             // 
             // bookmarks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(464, 410);
+            this.ClientSize = new System.Drawing.Size(320, 309);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.listBoxCityIDBookmarks);
@@ -127,6 +133,7 @@
             this.Controls.Add(this.textBoxCityID);
             this.Controls.Add(this.buttonAddCityID);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "bookmarks";
             this.ShowInTaskbar = false;
             this.Text = "Bookmarks";

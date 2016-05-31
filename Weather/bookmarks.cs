@@ -85,9 +85,8 @@ namespace Weather
             // reloads the data in the main form
             if (System.Windows.Forms.Application.OpenForms["main"] != null)
             {
-                (System.Windows.Forms.Application.OpenForms["main"] as main).readXmlCurrent();
-                (System.Windows.Forms.Application.OpenForms["main"] as main).showDataCurrent();
-                (System.Windows.Forms.Application.OpenForms["main"] as main).showDataForecast();
+                (System.Windows.Forms.Application.OpenForms["main"] as main).read();
+                (System.Windows.Forms.Application.OpenForms["main"] as main).show();
             }
         }
 

@@ -35,8 +35,8 @@ namespace Weather
         double cityCoordLon;
         double cityCoordLat;
         string country;
-        string sunRise;
-        string sunSet;
+        string sunRise = "";
+        string sunSet = "";
         double tempVal;
         double tempMin;
         double tempMax;
@@ -155,7 +155,7 @@ namespace Weather
             double.TryParse((string)temperature.Attribute("value"), System.Globalization.NumberStyles.AllowDecimalPoint, System.Globalization.NumberFormatInfo.InvariantInfo, out d);
             tempVal = d;
             double.TryParse((string)temperature.Attribute("min"), System.Globalization.NumberStyles.AllowDecimalPoint, System.Globalization.NumberFormatInfo.InvariantInfo, out d);
-            tempVal = d;
+            tempMin = d;
             double.TryParse((string)temperature.Attribute("max"), System.Globalization.NumberStyles.AllowDecimalPoint, System.Globalization.NumberFormatInfo.InvariantInfo, out d);
             tempMax = d;
             tempUnit = (string)temperature.Attribute("unit");
@@ -760,24 +760,18 @@ namespace Weather
             //checks if a api-key is setted
             if (settings.apikey == "")
             { // if not, announce a change to settings
-                MessageBox.Show("You need a API-key for the programm to work.\r\nGo to settings and insert one.", "API-key needed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
-                new settings("api").ShowDialog();
+                if (MessageBox.Show("You need a API-key for the programm to work.\r\nGo to settings and insert one.", "API-key needed", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) == DialogResult.OK)
+                {
+                    new settings("api").ShowDialog();
+                }
             }
             else
             {
-                readXmlCurrent();
-
-                readXmlForecast();
+                read();
             }
 
-            // Select the first one in the combobox and the domain-up-down
-            domainUpDown1.SelectedIndex = 0;
-            comboBox1.SelectedIndex = 0;
-
-            showDataCurrent();
-
-            showDataForecast();
+            // shows the data in the boxes
+            show();
 
             // selects the city label --> clouds box not selected
             labelCity.Select();
@@ -786,11 +780,40 @@ namespace Weather
         // refreshs the weather infos
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            readXmlCurrent();
-            readXmlForecast();
+            read();
 
-            showDataCurrent();
-            showDataForecast();
+            show();
+        }
+
+        /// <summary>
+        /// If called, it tries to read from the api to the local variables. If not possible, the stored data gets written
+        /// </summary>
+        public void read()
+        {
+            if (settings.apikey != "")
+            {
+                readXmlCurrent();
+                readXmlForecast();
+            }
+        }
+
+        /// <summary>
+        /// If called, it writes the data to the textboxes and catches empty data
+        /// </summary>
+        public void show()
+        {
+            if (settings.currentXml != "")
+            {
+                showDataCurrent();
+            }
+            if (settings.forecastXml != "")
+            {
+                showDataForecast();
+                
+                // Select the first one in the combobox and the domain-up-down
+                domainUpDown1.SelectedIndex = 0;
+                comboBox1.SelectedIndex = 0;
+            }
         }
 
         /// <summary>

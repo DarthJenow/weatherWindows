@@ -8,3 +8,4 @@ D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.bookmarks.resources
 D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.csproj.GenerateResource.Cache
 D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.exe
 D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.pdb
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.csprojResolveAssemblyReference.cache
