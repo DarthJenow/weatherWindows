@@ -64,6 +64,8 @@ namespace Weather
         public main()
         {
             InitializeComponent();
+
+            main_Load();
         }
 
         /// <summary>
@@ -755,7 +757,7 @@ namespace Weather
         }
 
         // gets executed if the form gets loaded; downloads and shows the weather infos
-        private void main_Load(object sender, EventArgs e)
+        private void main_Load()
         {   
             //checks if a api-key is setted
             if (settings.apikey == "")

@@ -9,3 +9,4 @@ D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.csproj.GenerateReso
 D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.exe
 D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.pdb
 D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.csprojResolveAssemblyReference.cache
+D:\Workspace\GitHub\weatherWindows\Weather\obj\Debug\Weather.browserCity.resources

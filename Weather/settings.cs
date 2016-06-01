@@ -179,5 +179,12 @@ namespace Weather
             // load api-key
             textBoxKey.Text = Properties.Settings.Default.apikey;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            browserCity br = new browserCity();
+            
+            br.Show();
+        }
     }
 }

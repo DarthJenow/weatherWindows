@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="browserCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="browserCity.Designer.cs">
+      <DependentUpon>browserCity.cs</DependentUpon>
+    </Compile>
     <Compile Include="forecastData.cs" />
     <Compile Include="main.cs">
       <SubType>Form</SubType>
@@ -88,6 +94,9 @@
     <Compile Include="bookmarks.Designer.cs">
       <DependentUpon>bookmarks.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="browserCity.resx">
+      <DependentUpon>browserCity.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="settings.resx">
       <DependentUpon>settings.cs</DependentUpon>
@@ -132,6 +142,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="back.png" />
+    <None Include="for.png" />
+    <None Include="home.png" />
     <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

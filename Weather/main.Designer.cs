@@ -1029,7 +1029,6 @@
             this.Name = "main";
             this.Text = "Weather";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.main_FormClosing);
-            this.Load += new System.EventHandler(this.main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControlInfo.ResumeLayout(false);
